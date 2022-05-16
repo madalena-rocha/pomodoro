@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <img src="./assets/top-image.svg" alt="">
+        </header>
+        
+        <div class="page">
+            <main class="main-menu">
+                <h1 class="stages">1º Worktime</h1>
+
+                <div class="countdown">
+                    <div class="countdown-container">
+                        <h3 class="minutes">25</h3>
+                    </div>
+
+                    <div class="separator">
+                        <h3>:</h3>
+                    </div>
+
+                    <div class="countdown-container">
+                        <h3 class="seconds">00</h3>
+                    </div>
+                </div>
+                
+                <div class="button">
+                    <button class="play-button" onclick="playButton()">
+                        <?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" 
+                        xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z" fill="none"/><path 
+                        d="M20 33l12-9-12-9v18zm4-29C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 
+                        4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16z"/></svg>
+                    </button>
+
+                    <button class="continue-button" onclick="continueButton()">
+                        <?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" 
+                        xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z" fill="none"/><path 
+                        d="M20 33l12-9-12-9v18zm4-29C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 
+                        4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16z"/></svg>
+                    </button>
+
+                    <button class="pause-button" onclick="pauseButton()">
+                        <?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" 
+                        xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z" fill="none"/><path 
+                        d="M18 32h4V16h-4v16zm6-28C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 
+                        4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16zm2-8h4V16h-4v16z"/></svg>
+                    </button>
+
+                    <button class="restart-button" onclick="restartButton()">
+                        <?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" 
+                        xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z" fill="none"/><path 
+                        d="M24 10V2L14 12l10 10v-8c6.63 0 12 5.37 12 12s-5.37 12-12 12-12-5.37-12-12H8c0 8.84 
+                        7.16 16 16 16s16-7.16 16-16-7.16-16-16-16z"/></svg>
+                    </button>
+                </div>
+            </main>
+            
+            <aside class="lateral-image">
+                <img src="./assets/clock-image.png" alt="Alarm clock">
+            </aside>
+        </div>
+
+        <footer>
+            <img src="./assets/bottom-image.svg" alt="">
+        </footer>
+
+    <script src="./scripts.js"></script>
+    
+</body>
+</html>
