@@ -1,3 +1,7 @@
 # pomodoro
-Modificação do desafio "Countdown" do Discover da Rocketseat para aplicação da técnica Pomodoro, muito utilizada pelos desenvolvedores para aumentar a produtividade, que consiste em organizar as tarefas em blocos de concentração intensa, intercalando o tempo de estudo com intervalos de descanso.
+O projeto "Pomodoro" foi desenvolvido a partir do desafio "Countdown" do Discover da Rocketseat. O objetivo do desafio "Countdown" foi a criação de uma página de coming soon (em breve) contendo um countdown timer (timer de contagem regressiva) informando quanto tempo falta para o lançamento do que poderia ser um produto ou serviço. Já o objetivo do projeto "Pomodoro" foi a aplicação da técnica Pomodoro, que consiste em organizar as tarefas em blocos de concentração intensa, intercalando o tempo de estudo com intervalos de descanso. O ciclo pomodoro é composto pela repetição de três blocos de 25min de foco (Worktime) seguidos de 5min de descanso (Short Break), e um bloco de 25min de foco seguidos de 15min de descanso (Long Break). As principais funcionalidades acrescentadas ao projeto "Pomodoro" foram:
+- O fluxo das etapas Worktime -> Short Break -> Worktime -> Short Break -> Worktime -> Short Break -> Worktime -> Long Break;
+- Os botões para iniciar, pausar / continuar ou reiniciar a contagem; 
+- O timer de início da contagem regressiva dependendo da etapa do ciclo, sendo de 25min (Worktime), 5min (Short Break) ou 15min (Long Break).
+
 Link para o artigo no LinkedIn: https://www.linkedin.com/pulse/projeto-pomodoro-madalena-machado-rocha/
