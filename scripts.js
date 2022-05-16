@@ -174,8 +174,6 @@ window.onload = function() {
     document.querySelector('.pause-button').classList.add('disabled');
     document.querySelector('.restart-button').classList.add('disabled');
     document.querySelector('.continue-button').classList.add('disabled');
-    document.querySelector('.short-break').classList.add('disabled');
-    document.querySelector('.long-break').classList.add('disabled');
 }
 
 function playButton() {
