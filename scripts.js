@@ -39,10 +39,8 @@ function startTimer(countdownTime) {
                 // definido pela variável shortBreakTime como 5min.
                 timer = shortBreakTime;
             } else {
-                // Se a etapa Worktime for verdadeira, atribui à variável timer o valor padrão do countdownTime de 25min
-                // acrescido de uma unidade, pois este valor foi decrescido em uma unidade quando o botão play foi pressionado.
-                // Isso foi feito para diminuir o tempo de atualização do valor na tela.
-                timer = countdownTime + 1;
+                // Se a etapa Worktime for verdadeira, atribui à variável timer o valor padrão do countdownTime de 25min.
+                timer = countdownTime;
             }
 
             // Cálculos de conversão para determinar os minutos e segundos.
@@ -177,9 +175,8 @@ window.onload = function() {
 }
 
 function playButton() {
-    // Decrementa a variável startCountdownTime em uma unidade e passa o valor como argumento da função startTimer.
-    // Isso foi feito para diminuir o tempo de atualização do valor na tela.
-    startTimer(startCountdownTime - 1);
+    // Passa o valor da variável startCountdownTime como argumento da função startTimer.
+    startTimer(startCountdownTime);
     
     document.querySelector('.play-button').classList.add('disabled');
     document.querySelector('.pause-button').classList.remove('disabled');
