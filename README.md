@@ -4,4 +4,4 @@ O projeto "Pomodoro" foi desenvolvido a partir do desafio "Countdown" do Discove
 - Os botões para iniciar, pausar / continuar ou reiniciar a contagem; 
 - O timer de início da contagem regressiva dependendo da etapa do ciclo, sendo de 25min (Worktime), 5min (Short Break) ou 15min (Long Break).
 
-Link para o artigo no LinkedIn: https://www.linkedin.com/pulse/projeto-pomodoro-madalena-machado-rocha/?trackingId=k6w9ISfdR4erKMMCUWns5w%3D%3D
+<a target="_blank" href="https://www.linkedin.com/pulse/projeto-pomodoro-madalena-machado-rocha/?trackingId=k6w9ISfdR4erKMMCUWns5w%3D%3D">Artigo no LinkedIn</a>
