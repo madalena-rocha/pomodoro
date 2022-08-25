@@ -1,8 +1,8 @@
 // Selecionando elementos HTML
-let playButton = document.querySelector('.play-button');
-let pauseButton = document.querySelector('.pause-button');
-let restartButton = document.querySelector('.restart-button');
-let continueButton = document.querySelector('.continue-button');
+let buttonPlay = document.querySelector('.play-button');
+let buttonPause = document.querySelector('.pause-button');
+let buttonRestart = document.querySelector('.restart-button');
+let buttonContinue = document.querySelector('.continue-button');
 
 // Tempo do Worktime.
 var startCountdownTime = 25 * 60;
@@ -68,10 +68,10 @@ function startTimer(countdownTime) {
             }
 
             // Mostrar apenas os botões desejados.
-            playButton.classList.add('disabled');
-            pauseButton.classList.add('disabled');
-            restartButton.classList.add('disabled');
-            continueButton.classList.remove('disabled');
+            buttonPlay.classList.add('disabled');
+            buttonPause.classList.add('disabled');
+            buttonRestart.classList.add('disabled');
+            buttonContinue.classList.remove('disabled');
 
             // Após reiniciar qualquer etapa, deseja-se que o contador fique pausado.
             pause = true;
@@ -158,10 +158,10 @@ function startTimer(countdownTime) {
                     document.querySelector(".seconds").innerText = seconds;
                 }
 
-                playButton.classList.add('disabled');
-                pauseButton.classList.add('disabled');
-                restartButton.classList.add('disabled');
-                continueButton.classList.remove('disabled');
+                buttonPlay.classList.add('disabled');
+                buttonPause.classList.add('disabled');
+                buttonRestart.classList.add('disabled');
+                buttonContinue.classList.remove('disabled');
 
                 // Decrementa a variável timer em 1 ao final de cada ciclo da função setInterval.
                 timer--;
@@ -175,41 +175,41 @@ function startTimer(countdownTime) {
 
 // Estrutura acionada quando a página inteira é carregada, incluindo seu conteúdo (imagens, css, scripts, etc.).
 window.onload = function() {
-    pauseButton.classList.add('disabled');
-    restartButton.classList.add('disabled');
-    continueButton.classList.add('disabled');
+    buttonPause.classList.add('disabled');
+    buttonRestart.classList.add('disabled');
+    buttonContinue.classList.add('disabled');
 }
 
 function playButton() {
     // Passa o valor da variável startCountdownTime como argumento da função startTimer.
     startTimer(startCountdownTime);
     
-    playButton.classList.add('disabled');
-    pauseButton.classList.remove('disabled');
-    restartButton.classList.remove('disabled');
-    continueButton.classList.add('disabled');
+    buttonPlay.classList.add('disabled');
+    buttonPause.classList.remove('disabled');
+    buttonRestart.classList.remove('disabled');
+    buttonContinue.classList.add('disabled');
 }
 
 function continueButton() {
     pause = false;
-    playButton.classList.add('disabled');
-    pauseButton.classList.remove('disabled');
-    restartButton.classList.remove('disabled');
-    continueButton.classList.add('disabled');
+    buttonPlay.classList.add('disabled');
+    buttonPause.classList.remove('disabled');
+    buttonRestart.classList.remove('disabled');
+    buttonContinue.classList.add('disabled');
 }
 
 function pauseButton() {
     pause = true;
-    playButton.classList.add('disabled');
-    pauseButton.classList.add('disabled');
-    restartButton.classList.remove('disabled');
-    continueButton.classList.remove('disabled');
+    buttonPlay.classList.add('disabled');
+    buttonPause.classList.add('disabled');
+    buttonRestart.classList.remove('disabled');
+    buttonContinue.classList.remove('disabled');
 }
 
 function restartButton() {
     restart = true;
-    playButton.classList.add('disabled');
-    pauseButton.classList.remove('disabled');
-    restartButton.classList.remove('disabled');
-    continueButton.classList.add('disabled');
+    buttonPlay.classList.add('disabled');
+    buttonPause.classList.remove('disabled');
+    buttonRestart.classList.remove('disabled');
+    buttonContinue.classList.add('disabled');
 }
