@@ -1,3 +1,9 @@
+// Selecionando elementos HTML
+let playButton = document.querySelector('.play-button');
+let pauseButton = document.querySelector('.pause-button');
+let restartButton = document.querySelector('.restart-button');
+let continueButton = document.querySelector('.continue-button');
+
 // Tempo do Worktime.
 var startCountdownTime = 25 * 60;
 // Tempo do Short Break.
@@ -62,10 +68,10 @@ function startTimer(countdownTime) {
             }
 
             // Mostrar apenas os botões desejados.
-            document.querySelector('.play-button').classList.add('disabled');
-            document.querySelector('.pause-button').classList.add('disabled');
-            document.querySelector('.restart-button').classList.add('disabled');
-            document.querySelector('.continue-button').classList.remove('disabled');
+            playButton.classList.add('disabled');
+            pauseButton.classList.add('disabled');
+            restartButton.classList.add('disabled');
+            continueButton.classList.remove('disabled');
 
             // Após reiniciar qualquer etapa, deseja-se que o contador fique pausado.
             pause = true;
@@ -152,10 +158,10 @@ function startTimer(countdownTime) {
                     document.querySelector(".seconds").innerText = seconds;
                 }
 
-                document.querySelector('.play-button').classList.add('disabled');
-                document.querySelector('.pause-button').classList.add('disabled');
-                document.querySelector('.restart-button').classList.add('disabled');
-                document.querySelector('.continue-button').classList.remove('disabled');
+                playButton.classList.add('disabled');
+                pauseButton.classList.add('disabled');
+                restartButton.classList.add('disabled');
+                continueButton.classList.remove('disabled');
 
                 // Decrementa a variável timer em 1 ao final de cada ciclo da função setInterval.
                 timer--;
@@ -169,41 +175,41 @@ function startTimer(countdownTime) {
 
 // Estrutura acionada quando a página inteira é carregada, incluindo seu conteúdo (imagens, css, scripts, etc.).
 window.onload = function() {
-    document.querySelector('.pause-button').classList.add('disabled');
-    document.querySelector('.restart-button').classList.add('disabled');
-    document.querySelector('.continue-button').classList.add('disabled');
+    pauseButton.classList.add('disabled');
+    restartButton.classList.add('disabled');
+    continueButton.classList.add('disabled');
 }
 
 function playButton() {
     // Passa o valor da variável startCountdownTime como argumento da função startTimer.
     startTimer(startCountdownTime);
     
-    document.querySelector('.play-button').classList.add('disabled');
-    document.querySelector('.pause-button').classList.remove('disabled');
-    document.querySelector('.restart-button').classList.remove('disabled');
-    document.querySelector('.continue-button').classList.add('disabled');
+    playButton.classList.add('disabled');
+    pauseButton.classList.remove('disabled');
+    restartButton.classList.remove('disabled');
+    continueButton.classList.add('disabled');
 }
 
 function continueButton() {
     pause = false;
-    document.querySelector('.play-button').classList.add('disabled');
-    document.querySelector('.pause-button').classList.remove('disabled');
-    document.querySelector('.restart-button').classList.remove('disabled');
-    document.querySelector('.continue-button').classList.add('disabled');
+    playButton.classList.add('disabled');
+    pauseButton.classList.remove('disabled');
+    restartButton.classList.remove('disabled');
+    continueButton.classList.add('disabled');
 }
 
 function pauseButton() {
     pause = true;
-    document.querySelector('.play-button').classList.add('disabled');
-    document.querySelector('.pause-button').classList.add('disabled');
-    document.querySelector('.restart-button').classList.remove('disabled');
-    document.querySelector('.continue-button').classList.remove('disabled');
+    playButton.classList.add('disabled');
+    pauseButton.classList.add('disabled');
+    restartButton.classList.remove('disabled');
+    continueButton.classList.remove('disabled');
 }
 
 function restartButton() {
     restart = true;
-    document.querySelector('.play-button').classList.add('disabled');
-    document.querySelector('.pause-button').classList.remove('disabled');
-    document.querySelector('.restart-button').classList.remove('disabled');
-    document.querySelector('.continue-button').classList.add('disabled');
+    playButton.classList.add('disabled');
+    pauseButton.classList.remove('disabled');
+    restartButton.classList.remove('disabled');
+    continueButton.classList.add('disabled');
 }
